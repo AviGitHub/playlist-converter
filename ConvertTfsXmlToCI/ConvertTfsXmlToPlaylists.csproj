@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{85CB7B07-5BA1-4681-91BC-E19ACFB1FB33}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConvertTfsXmlToCI</RootNamespace>
-    <AssemblyName>ConvertTfsXmlToCI</AssemblyName>
+    <RootNamespace>ConvertTfsXmlToPlaylists</RootNamespace>
+    <AssemblyName>ConvertTfsXmlToPlaylists</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PlayItem.cs" />
+    <Compile Include="PlayList.cs" />
+    <Compile Include="PlayListFileHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoteConfiguration.cs" />
+    <Compile Include="Logic.cs" />
+    <Compile Include="XmlUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
